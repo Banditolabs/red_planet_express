@@ -2,6 +2,12 @@
   "name": "app",
   "private": "true",
   "dependencies": {
-    "esbuild": "^0.15.7"
+    "esbuild": "^0.15.7",
+    "esbuild-rails": "^1.0.3",
+    "n": "^9.0.0",
+    "stable": "^0.1.8"
+  },
+  "scripts": {
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds"
   }
 }
